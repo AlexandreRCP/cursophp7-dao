@@ -33,10 +33,17 @@
 
 	echo $aluno;
 */
+	//Alterar dados de um usuário
+//	$usuario = new Usuario();
+//	$usuario->loadById(1);
+//	$usuario->upDate("professor", "professor");
 
+	//Deleta cadastro de um usuário
 	$usuario = new Usuario();
 
-	$usuario->loadById(1);
+	$usuario->loadById(2);
 
-	$usuario->upDate("professor", "professor");
+	$usuario->delete();
+
+	echo $usuario;
 ?>
