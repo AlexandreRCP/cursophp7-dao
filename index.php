@@ -7,10 +7,23 @@
 
 	echo json_encode($usuarios);
 */
+	// Carrega 1 usuário
+//	$cad = new Usuario();
+//	$cad->loadById(2);
+//	echo $cad;
 
-	$cad = new Usuario();
+	//Carrega uma lista de usuários
 
-	$cad->loadById(2);
+//	$list = Usuario::getList();
+//	echo json_encode($list)
 
-	echo $cad;
+	//Carrega uma lista de usuário buscando pela pesquisa
+//	$search = Usuario::search("Al");
+//	echo json_encode($search);
+
+	//Carrega um usuário usando o login e a senha
+	$usuario = new Usuario();
+	$usuario->login("Alexandre Paiva", "123456");
+
+	echo $usuario;
 ?>
